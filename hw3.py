@@ -25,7 +25,7 @@ def rest_query_ex3():
     geo = [40.7128, -74.0060, "10mi"]  # City of New York
     MAX_ID = None
    # for it in range(1):  # Retrieve up to 200 tweets
-    tweets = myApi.GetSearch(query, geocode=geo, count=100, max_id=MAX_ID, result_type='recent')
+    tweets = myApi.GetSearch(query, geocode=geo, count=100, max_id=MAX_ID, result_type='mix')
     for raw_tweet in tweets:
         tweet = json.loads(str(raw_tweet))
         print_info(tweet)
