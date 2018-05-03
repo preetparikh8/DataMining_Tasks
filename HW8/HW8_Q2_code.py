@@ -5,7 +5,10 @@
 
 import numpy as np
 from hmmlearn import hmm
-import types
+import warnings
+
+warnings.filterwarnings("ignore")
+
 
 
 # In[4]:
@@ -136,7 +139,7 @@ for x in X:
 # Task 3: Let us predict the future three subsequent cities to be visited based on the following sequence of observations:<br/>
 # [[450], [650]]
 print '(Q2.2) Sequence of next 3 cities : '
-x = [[335], [339], [148], [50]]
+x = [[355], [339], [148], [50]]
 y = hmm_predict_further_states(model, x, 3)
 #print label
 #print y
