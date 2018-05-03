@@ -4,8 +4,6 @@
 # In[2]:
 
 import numpy as np
-import types
-import itertools
 import copy
 
 # In[23]:
@@ -101,7 +99,7 @@ y = [[3, 2, 3, 1, 3],
      [3, 4, 3, 2, 0],
      [3, 0, 3, 4, 1],
      [1, 3, 0, 4, 3],
-     [1, 3, 2, 4, 2],
+     [1, 3, 2, 4, 1],
      [0, 4, 1, 4, 2],
      [4, 0, 4, 0, 4]]
 
@@ -116,6 +114,6 @@ print [label[s] for s in pred]
 
 
 # predict the next 5 states given the current sequence 1,2,2
-print "Sequence if the current city is Washington D.C"
+print "Sequence if the current city is Washington D.C:"
 pred = mm.predict([2], 5)
 print [label[s] for s in pred]
